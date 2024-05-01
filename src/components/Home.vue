@@ -14,7 +14,7 @@
             </div>
             <div class="rightnews">
               <img class="img-25 img25-1" src="../assets/valorant_image.png">
-              <img class="img-25" src="../assets/valorant_image.png">
+              <img class="img-25" src="../assets/free_fire_image.png">
             </div>
           </div>
         </div>
@@ -102,6 +102,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('../assets/bg_branco.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .featured-box {
