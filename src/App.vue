@@ -1,9 +1,11 @@
 <template>
   <HeaderPage/>
   <HomePage/>
+  
 </template>
 
 <script>
+
 import HomePage from './components/Home.vue'
 import HeaderPage from './components/Header.vue'
 
@@ -12,6 +14,7 @@ export default {
   components: {
     HomePage,
     HeaderPage,
+    
   }
 }
 </script>
@@ -24,5 +27,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+*{
+  padding: 0;
+  margin: 0;
 }
 </style>
