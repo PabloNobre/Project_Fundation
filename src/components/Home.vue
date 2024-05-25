@@ -1,7 +1,8 @@
 <template>
   <main class="wrapper">
     <section class="featured-box">
-      <div>
+
+      <div class="lastNews">
         <section class="lastnewsTitule">
           <h1 class="titleLast">ÚLTIMAS NOTICIAS</h1>
           <H2 class="lineMain" id="line01"></H2>
@@ -10,15 +11,39 @@
         <div>
           <div class="new">
             <div class="leftNews">
-              <img class="img-50" src="../assets/tristana_image.png">
+              <div class="image-container">
+                <img class="img-50" src="../assets/tristana_image.png">
+                <div class="image-info">
+                  <p class="namePost">LEAGUE OF LEGENDS</p>
+                  <p class="subPost">LEAGUE DISPLAY</p>
+                  <p class="subtitle">Protetores de tela e fundos de tela em HD, diretamente para sua área de trabalho</p>
+                </div>
+              </div>
             </div>
             <div class="rightnews">
-              <img class="img-25 img25-1" src="../assets/valorant_image.png">
-              <img class="img-25" src="../assets/free_fire_image.png">
+              <div class="image-container">
+                <img class="img-25" src="../assets/valorant_image.png">
+                <div class="image-info-25">
+                  <p class="namePost">VALORANT</p>
+                  <p class="subPost">VALORANT MOBILE</p>
+                  <p class="subtitle">Valorant é o próximo sucesso dos games</p>
+                  <p class="subtitle-2">e ganha versão mobile</p>
+                </div>
+              </div>
+              <div class="image-container">
+                <img class="img-25" src="../assets/free_fire_image.png">
+                <div class="image-info-25">
+                  <p class="namePost">FREE FIRE</p>
+                  <p class="subPost">FREE FIRE RECEBE QUEBRANDO GELO</p>
+                  <p class="subtitle">A Garena anunciou, na última quarta-feira,</p>
+                  <p class="subtitle-2">que o festival de Ano Novo está de volta.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <section class="lastnewsTitule2">
         <H2 class="lineMain"></H2>
         <h1 class="titleLast" id="cronogramaPage">CRONOGRAMA</h1>
@@ -155,11 +180,9 @@ body {
 
 .img-25 {
   height: 190px;
+  width: 350PX;
   margin-left: 20px;
-}
-
-.img25-1 {
-  margin-bottom: 18px;
+  margin: 5px
 }
 
 .lastnewsTitule2 {
@@ -218,8 +241,64 @@ body {
   align-items: flex-start
 }
 
+.subtitle-2 {
+  font-size: 12px;
+  font-family: 'Gilroy-Regular', sans-serif;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  align-items: flex-start
+}
+
 .linemain2 {
   border-bottom: 1px solid #ccc; /* Adiciona uma borda inferior cinza */
   margin-bottom: 10px; /* Adiciona espaço abaixo da linha */
 }
+
+.image-container {
+  position: relative;
+}
+
+.image-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  align-items: flex-start;
+  color: white; /* Cor do texto */
+  padding: 20px; /* Espaçamento interno */
+}
+
+.image-info-25 {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  bottom: 0;
+  left: 0;
+  color: white; /* Cor do texto */
+  padding-left: 15px; /* Espaçamento interno */
+  padding-bottom: 10px; /* Espaçamento interno */
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .featured-box {
+    width: 90%;
+  }
+
+  .img-50, .img-25 {
+    height: auto;
+    width: 100%;
+  }
+
+  .new, .newCronograma {
+    flex-direction: column;
+  }
+}
+
 </style>
