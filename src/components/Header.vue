@@ -76,7 +76,7 @@ html,
     display: flex;
     align-items: center;
     height: 50px;
-    gap: 12 0px;
+    gap: 120px;
   }
 
 
