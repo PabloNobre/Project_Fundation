@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-    <section class="featured-box">
+    
 
       <div id="content_header">
         <nav>
@@ -13,26 +13,23 @@
           </div>
 
           
-          <a href=""><img src="../assets/seach_icon.png" alt="#" id="seach_icon"></a>
+          
           
         </nav>
 
-        <section id="mid_container">
-          <div id="presentation">
-            <div id="text_presentation">
-              <p id="text_1">SEU GAME</p>
-              <p id="text_2">FAVORITO</p>
-              <p id="text_3">veja abaixo as mais novas notícias e não perca nenhuma novidade</p>
-            </div>
-            <button id="news_button">novidades</button>
+        <div id="presentation">
+          <div id="text_presentation">
+            <p id="text_1">SEU GAME</p>
+            <p id="text_2">FAVORITO</p>
+            <p id="text_3">veja abaixo as mais novas notícias e não perca nenhuma novidade</p>
           </div>
+          <button id="news_button">novidades</button>
+        </div>
 
-        <!--<img id="gamer" src="../assets/gamer.png" alt=""> -->
-
-        </section>
+       
       </div>
      
-    </section>
+    
   </div>
     
 </template>
@@ -45,11 +42,17 @@
 
 <style scoped>
 
-  html,
+html,
   body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  
+  *{
+    padding: 0;
+    margin: 0;
   }
   
   #header{
@@ -71,10 +74,12 @@
 
   nav{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 50px
+    height: 50px;
+    gap: 12 0px;
   }
+
+
 
   .nav-container {
     display: flex;
@@ -98,6 +103,13 @@
     font-weight: bold;
     text-decoration: none;
   }
+
+  .nav-item:hover{
+    color: #0076EA;
+    transition: 0.2s;
+  }
+
+  
 
 
 
@@ -153,10 +165,5 @@
   display: flex;
 }
 
-
-
-
-
-  
 </style>
   
