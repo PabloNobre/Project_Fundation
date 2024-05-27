@@ -1,17 +1,20 @@
 <template>
   <HeaderPage/>
   <HomePage/>
+  <FooterPage/>
 </template>
 
 <script>
 import HomePage from './components/Home.vue'
 import HeaderPage from './components/Header.vue'
+import FooterPage from "./components/Footer.vue";
 
 export default {
   name: 'App',
   components: {
     HomePage,
     HeaderPage,
+    FooterPage,
   }
 }
 </script>
