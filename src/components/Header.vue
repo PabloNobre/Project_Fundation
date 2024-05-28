@@ -76,7 +76,7 @@ html,
     display: flex;
     align-items: center;
     height: 50px;
-    gap: 120px;
+    gap: 180px;
   }
 
 
@@ -126,7 +126,7 @@ html,
 
   #presentation{
     width: 490px;
-    height: 420px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -134,6 +134,7 @@ html,
     font-size: 70px;
     color: white;
     margin-top: 200px;
+    margin-left: -60px;
   }
 
   #text_presentation :nth-child(2){
