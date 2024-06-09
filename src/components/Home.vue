@@ -2,14 +2,14 @@
   <main class="wrapper">
     <section class="featured-box">
 
-      <div class="lastNews">
+      <div class="lastNews" id="new">
         <section class="lastnewsTitule">
           <h1 class="titleLast">ÚLTIMAS NOTICIAS</h1>
           <H2 class="lineMain" id="line01"></H2>
         </section>
 
         <div>
-          <div class="new">
+          <div class="new marginBottom">
             <div class="leftNews">
               <div class="image-container">
                 <img class="img-50" src="../assets/tristana_image.png">
@@ -52,15 +52,15 @@
       <div class="cronograma-new">
         <div class="newCronograma">
           <div class="leftCro">
-            <h1 class="subTitleLast"> TERÇA 23/04</h1>
+            <h1 class="subTitleLast"> TERÇA 23/06</h1>
             <div>
               <img class="ImageNew" src="../assets/cs2_image.png">
             </div>
           </div>
           <div class="textnew">
             <h1 class="namePost">COUNTER STRIKER 2</h1>
-            <h1 class="subPost">ERROR 404</h1>
-            <p class="subtitle">Erros da Valve com CS2 já têm consequências e algo precisa ser feito.</p>
+            <h1 class="subPost">MAJOR 2024</h1>
+            <p class="subtitle">Segunda edição do principal campeonato de Counter-Strike 2 de 2024 será organizado pela Perfect World.</p>
           </div>
         </div>
         <H2 class="linemain2"></H2>
@@ -69,7 +69,7 @@
       <div class="cronograma-new">
         <div class="newCronograma">
           <div class="leftCro">
-            <h1 class="subTitleLast"> SEGUNDA 22/04</h1>
+            <h1 class="subTitleLast"> SEGUNDA 22/06</h1>
             <div>
               <img class="ImageNew" src="../assets/fortnite_image.png">
             </div>
@@ -87,7 +87,7 @@
       <div class="cronograma-new">
         <div class="newCronograma">
           <div class="leftCro">
-            <h1 class="subTitleLast"> DOMINGO 21/04</h1>
+            <h1 class="subTitleLast"> DOMINGO 21/06</h1>
             <div>
               <img class="ImageNew" src="../assets/free_fire_image.png">
             </div>
@@ -120,6 +120,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.marginBottom {
+  margin-bottom: 80px;
 }
 
 .wrapper {
@@ -188,9 +192,13 @@ body {
 .lastnewsTitule2 {
   display: flex;
   justify-content: left;
+  margin-bottom: 20px;
 }
 .cronograma-new .new {
   justify-content: flex-start; /* Alinha o .new à esquerda */
+}
+.cronograma-new{
+  margin-bottom: 80px;
 }
 
 .newCronograma {
